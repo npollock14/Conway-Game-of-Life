@@ -26,7 +26,7 @@ import javax.swing.Timer;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-//test git to eclipse
+//test laptop to github
 public class Driver extends JPanel
 		implements ActionListener, KeyListener, MouseListener, MouseMotionListener, MouseWheelListener {
 	private static final long serialVersionUID = 1L;
@@ -100,7 +100,7 @@ public class Driver extends JPanel
 		}
 		cam.update(keys, getMousePos());
 		if (keys[79]) {
-			String[] data = f.chooseOpen("Res\\DesignFiles", "life").split("x");
+			String[] data = f.chooseOpen("Conway's Game of Life\\Res\\DesignFiles", "life").split("x");
 			if (data.length > 1) {
 				grid.setData(data);
 			}
@@ -112,7 +112,7 @@ public class Driver extends JPanel
 			for (int i = 0; i < grid.alive.size(); i++) {
 				result += grid.alive.get(i).x + "," + grid.alive.get(i).y + "x";
 			}
-			f.chooseSave(result, ".life", "Res\\DesignFiles");
+			f.chooseSave(result, ".life", "Conway's Game of Life\\Res\\DesignFiles");
 			keys[91] = false;
 			keys[93] = false;
 		}

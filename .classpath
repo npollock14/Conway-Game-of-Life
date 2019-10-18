@@ -2,5 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="Conway&apos;s Game of Life/src"/>
+	<classpathentry kind="lib" path="Conway&apos;s Game of Life/Res"/>
 	<classpathentry kind="output" path="Conway&apos;s Game of Life/bin"/>
 </classpath>
